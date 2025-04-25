@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.admin.css" rel="stylesheet">
+    <style>
+      #adminPanel { display: none; }
+      #loginForm { max-width: 300px; margin: 100px auto; }
+    </style>
+</head>
+
+<body>
+
+  <!-- Login Section -->
+  <div id="loginForm" class="text-center">
+    <img src="http://pdm888.oss-cn-beijing.aliyuncs.com/img/AAA.png " alt="Trulli" width="500" height="333">
+    <h3>Enter Admin Password</h3>
+    <input type="password" id="adminPassword" class="form-control" placeholder="Password" />
+    <br>
+    <button class="btn btn-primary" onclick="checkPassword()">Login</button>
+    <p id="errorMessage" class="text-danger"></p>
+  </div>
+
+  <!-- Admin Panel Section -->
+  <div id="adminPanel">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Image DApp</h2>
+        <a href="index.html">Marketplace</a>
+        <a href="collection.html">My Collection</a>
+        <a href="admin.html" class="active">Admin</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <h1>Manage Image Prices</h1>
+        </div>
+    </nav>
+
+    <div class="main-content">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Current Price (ETH)</th>
+            <th>Set New Price</th>
+          </tr>
+        </thead>
+        <tbody id="adminTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+ <script>
+    function checkPassword() {
+      const input = document.getElementById('adminPassword').value;
+      const correctPassword = '000000';
+      if (input === correctPassword) {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('adminPanel').style.display = 'block';
+      } else {
+        document.getElementById('errorMessage').innerText = 'Wrong password';
+      }
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

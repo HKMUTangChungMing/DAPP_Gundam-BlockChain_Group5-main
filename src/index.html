@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gundam Image Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Image DApp</h2>
+        <a href="index.html">Marketplace</a>
+        <a href="collection.html" class="active">My Collection</a>
+        <a href="admin.html">Admin</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="main-content">
+        <div class="navbar">
+            <h1>Image Marketplace</h1>
+        </div>
+        <div id="imagesRow" class="row"></div>
+        <div id="imageTemplate" style="display: none;">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="panel panel-default panel-image">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Sample Image</h3>
+                    </div>
+                    <div class="panel-body">
+                        <img src="images/sample.jpeg" class="img-rounded img-center" style="width: 100%;">
+                        <br/><br/>
+                        <strong>Description</strong>: <span class="image-desc">Beautiful artwork</span><br/>
+                        <strong class="image-price">Price: Loading...</strong><br/>
+                        <strong class="image-stock">Stock: Loading...</strong><br/>
+                        <strong class="image-buyers">Buyers: Loading...</strong><br/><br/>
+                        <button class="btn btn-default btn-buy" type="button" data-id="0">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+

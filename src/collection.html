@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Collection</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.collection.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Image DApp</h2>
+        <a href="index.html">Marketplace</a>
+        <a href="collection.html" class="active">My Collection</a>
+        <a href="admin.html">Admin</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="navbar">
+            <h1>My Collection</h1>
+        </div>
+        <div class="container">
+            <div id="myCollectionRow" class="row"></div>
+        </div>
+
+        <!-- Template -->
+        <div id="myImageTemplate" style="display: none;">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">My Image</h3>
+                    </div>
+                    <div class="panel-body">
+                        <img src="" class="img-rounded img-center image-pic" style="width: 100%;">
+                        <br/><br/>
+                        <strong>Description</strong>: <span class="image-desc"></span><br/>
+                        <strong class="image-count">Bought: 0 times</strong><br/>
+                        <strong>Purchase History</strong>:
+                        <ul class="purchase-history"></ul><br/>
+                        <a class="btn btn-success btn-download" href="#" download target="_blank">Download Image</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/collection.js"></script>
+</body>
+</html>

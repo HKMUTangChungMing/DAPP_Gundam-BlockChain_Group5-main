@@ -3,6 +3,11 @@
  We use the Web3 Framework to design the Decentralized Application to create blockchain. Our topic is the Gundam online NFT marketplace.
  The purpose of designing this project is to provide Gundam enthusiasts with a platform where they can purchase images related to Gundam.
 
+# Demo
+
+![t8ike-ogeat.gif](https://s2.loli.net/2025/04/25/wkHIjYdfM4xyAXl.gif)
+ 
+
 ### User
  In the website, user can visit the website, check all the NFT products(products image, description, price, stock, buyers) available at the marketplace, and check what they buy at their collection. 
  
